@@ -22,17 +22,9 @@ A identidade do projeto busca transmitir:
 
 ---
 
-## 📅 Data do casamento
-
-**22 de maio de 2027**
-
-O site conta com um contador regressivo automático até a data do casamento.
-
----
-
 ## 🌿 Funcionalidades
 
-Atualmente, o projeto possui ou prevê:
+Atualmente, o projeto possui/prevê:
 
 - Hero principal com identidade visual do casamento
 - Slider automático com:
@@ -51,14 +43,6 @@ Atualmente, o projeto possui ou prevê:
 - Lista de presentes
 - Layout responsivo
 - Menu mobile
-
----
-
-## 📖 Versículo
-
-> “Assim, já não são dois, mas uma só carne. Portanto, o que Deus uniu, ninguém separa.”
->
-> **Mateus 19:6**
 
 ---
 
