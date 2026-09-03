@@ -1,0 +1,21 @@
+:root {
+
+    --primary: #010e04;
+
+    --olive-green:#303a26;
+
+    --primary-hover: #011604;
+
+    --primary-light: #ece9cc;
+
+    --text-on-primary: #e7e6d9;
+
+    --text-on-dark:#030800;
+
+    --gold: #b89a57;
+
+    --primary-shadow: rgba(44, 37, 40, 0.2);
+
+    --background-logo:#e9f3e8;
+
+}
