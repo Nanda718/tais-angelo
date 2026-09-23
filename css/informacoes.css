@@ -1,602 +1,391 @@
-/* =====================================
-   HERO - INFORMAÇÕES
-===================================== */
-
+/* hero - informações */
 #info-hero {
-    position: relative;
-
-    width: 100%;
-    height: 55vh;
-    min-height: 450px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    background-color: var(--primary);
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--primary);
 }
-
 
 /* imagem de fundo */
-
 .info-background {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
-
 
 /* camada escura */
-
 .info-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            rgba(1, 14, 4, .55),
-            rgba(1, 14, 4, .68)
-        );
-
-    z-index: 2;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(1, 14, 4, 0.55), rgba(1, 14, 4, 0.68));
+  z-index: 2;
 }
 
-
 /* conteúdo */
-
 .info-hero-content {
-    position: relative;
-
-    z-index: 4;
-
-    width: 100%;
-    max-width: 750px;
-
-    padding: 0 25px;
-
-    text-align: center;
-
-    color: var(--text-on-primary);
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  max-width: 750px;
+  padding: 0 25px;
+  text-align: center;
+  color: var(--text-on-primary);
 }
 
 .info-hero-content > p {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 11px;
-    font-weight: 500;
-
-    text-transform: uppercase;
-
-    letter-spacing: 5px;
-
-    color: var(--gold);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--gold);
 }
 
 .info-hero-content h1 {
-    margin-bottom: 12px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(65px, 8vw, 105px);
-    font-weight: 400;
-
-    line-height: 1;
-
-    color: var(--text-on-primary);
+  margin-bottom: 12px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(65px, 8vw, 105px);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-on-primary);
 }
 
 .info-hero-content > span {
-    display: block;
-
-    max-width: 520px;
-
-    margin: 0 auto;
-
-    font-family: "Lora", serif;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    color: rgba(231, 230, 217, .8);
+  display: block;
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(231, 230, 217, 0.8);
 }
 
-
-/* =====================================
-   ONDA DO HERO
-===================================== */
-
+/* onda do hero */
 .info-wave {
-    position: absolute;
-
-    left: 50%;
-    bottom: -1px;
-
-    width: 102vw;
-    height: 140px;
-
-    transform: translateX(-50%);
-
-    z-index: 5;
-
-    line-height: 0;
-
-    overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 102vw;
+  height: 140px;
+  transform: translateX(-50%);
+  z-index: 5;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .info-wave svg {
-    display: block;
-
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .info-wave path {
-    fill: var(--primary-light);
+  fill: var(--primary-light);
 }
 
-
-/* =====================================
-   PADRÃO DAS SEÇÕES
-===================================== */
-
+/* padrão das seções */
 .section-content {
-    position: relative;
-
-    width: 100%;
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 0 30px;
-
-    text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
 }
 
 .section-pretitle {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 4px;
-
-    color: var(--gold);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--gold);
 }
 
 .section-content h2 {
-    margin-bottom: 60px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(48px, 6vw, 70px);
-    font-weight: 400;
-
-    line-height: 1.1;
-
-    color: var(--primary);
+  margin-bottom: 60px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(48px, 6vw, 70px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
 }
 
-
-/* =====================================
-   CERIMÔNIA & RECEPÇÃO
-===================================== */
-
+/* cerimônia & recepção */
 #cerimonia {
-    position: relative;
-
-    width: 100%;
-
-    padding: 120px 0 130px;
-
-    background-color: var(--primary-light);
+  position: relative;
+  width: 100%;
+  padding: 120px 0 130px;
+  background-color: var(--primary-light);
 }
-
 
 /* detalhes do evento */
-
 .event-details {
-    width: 100%;
-
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-
-    gap: 0;
-
-    margin-bottom: 55px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 55px;
 }
 
 .event-item {
-    flex: 1;
-
-    min-width: 0;
-
-    padding: 15px 45px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
+  flex: 1;
+  min-width: 0;
+  padding: 15px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .event-item > i {
-    margin-bottom: 20px;
-
-    font-size: 20px;
-
-    color: var(--gold);
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--gold);
 }
 
 .event-label {
-    margin-bottom: 10px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    color: var(--gold);
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
 }
 
 .event-item strong {
-    font-family: "Lora", serif;
-
-    font-size: 17px;
-    font-weight: 500;
-
-    line-height: 1.6;
-
-    color: var(--primary);
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--primary);
 }
 
 .event-item p {
-    margin-top: 7px;
-
-    max-width: 250px;
-
-    font-family: "Lora", serif;
-
-    font-size: 13px;
-
-    line-height: 1.7;
-
-    color: rgba(1, 14, 4, .65);
+  margin-top: 7px;
+  max-width: 250px;
+  font-family: "Lora", serif;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(1, 14, 4, 0.65);
 }
-
 
 /* divisória vertical */
-
 .event-divider {
-    width: 1px;
-
-    align-self: stretch;
-
-    background-color: rgba(169, 139, 79, .35);
+  width: 1px;
+  align-self: stretch;
+  background-color: rgba(169, 139, 79, 0.35);
 }
 
-
-/* =====================================
-   BOTÃO DO MAPA
-===================================== */
-
+/* botão do mapa */
 .map-button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-
-    padding: 15px 28px;
-
-    border: 1px solid var(--gold);
-
-    text-decoration: none;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    color: var(--primary);
-
-    transition: .35s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 28px;
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  transition: 0.35s ease;
 }
 
 .map-button i {
-    font-size: 11px;
-
-    transition: transform .35s ease;
+  font-size: 11px;
+  transition: transform 0.35s ease;
 }
 
 .map-button:hover {
-    background-color: var(--gold);
-
-    color: var(--primary-light);
+  background-color: var(--gold);
+  color: var(--primary-light);
 }
 
 .map-button:hover i {
-    transform: translateX(3px);
+  transform: translateX(3px);
 }
 
-
-/* =====================================
-   ORIENTAÇÕES
-===================================== */
-
+/* orientações */
 #orientacoes {
-    position: relative;
-
-    width: 100%;
-
-    padding: 130px 0;
-
-    background-color: #f5f2df;
-
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 130px 0;
+  background-color: #f5f2df;
+  overflow: hidden;
 }
-
 
 /* título */
-
 #orientacoes .section-content h2 {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
-
 
 /* lista */
-
 .guest-info {
-    width: 100%;
-
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 0;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
 }
-
 
 /* item */
-
 .guest-info-item {
-    position: relative;
-
-    min-height: 220px;
-
-    padding: 45px 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
+  position: relative;
+  min-height: 220px;
+  padding: 45px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
 /* linhas entre os blocos */
-
 .guest-info-item:nth-child(odd) {
-    border-right: 1px solid rgba(169, 139, 79, .25);
+  border-right: 1px solid rgba(169, 139, 79, 0.25);
 }
 
 .guest-info-item:nth-child(-n + 2) {
-    border-bottom: 1px solid rgba(169, 139, 79, .25);
+  border-bottom: 1px solid rgba(169, 139, 79, 0.25);
 }
 
-
 /* ícone */
-
 .guest-icon {
-    width: 45px;
-    height: 45px;
-
-    margin-bottom: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid rgba(169, 139, 79, .5);
-    border-radius: 50%;
-
-    color: var(--gold);
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(169, 139, 79, 0.5);
+  border-radius: 50%;
+  color: var(--gold);
 }
 
 .guest-icon i {
-    font-size: 15px;
+  font-size: 15px;
 }
 
-
 /* texto */
-
 .guest-info-item h3 {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 16px;
-    font-weight: 500;
-
-    color: var(--primary);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary);
 }
 
 .guest-info-item p {
-    max-width: 280px;
-
-    font-family: "Lora", serif;
-
-    font-size: 13px;
-
-    line-height: 1.8;
-
-    color: rgba(1, 14, 4, .65);
+  max-width: 280px;
+  font-family: "Lora", serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(1, 14, 4, 0.65);
 }
 
-
-/* =====================================
-   RESPONSIVO - TABLET
-===================================== */
-
+/* responsivo - tablet */
 @media (max-width: 900px) {
-
-    #info-hero {
-        height: 50vh;
-        min-height: 420px;
-    }
-
-    .info-wave {
-        height: 100px;
-    }
-
-    .event-details {
-        flex-direction: column;
-
-        max-width: 500px;
-
-        margin: 0 auto 50px;
-    }
-
-    .event-item {
-        padding: 35px 20px;
-    }
-
-    .event-divider {
-        width: 80px;
-        height: 1px;
-
-        align-self: center;
-
-        background-color: rgba(169, 139, 79, .35);
-    }
-
+  #info-hero {
+    height: 50vh;
+    min-height: 420px;
+  }
+  .info-wave {
+    height: 100px;
+  }
+  .event-details {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto 50px;
+  }
+  .event-item {
+    padding: 35px 20px;
+  }
+  .event-divider {
+    width: 80px;
+    height: 1px;
+    align-self: center;
+    background-color: rgba(169, 139, 79, 0.35);
+  }
 }
 
-
-/* =====================================
-   RESPONSIVO - MOBILE
-===================================== */
-
+/* responsivo - mobile */
 @media (max-width: 768px) {
-
-    #info-hero {
-        height: 52vh;
-        min-height: 400px;
-    }
-
-    .info-hero-content {
-        padding: 0 20px;
-    }
-
-    .info-hero-content > span {
-        font-size: 14px;
-    }
-
-    .info-wave {
-        height: 80px;
-    }
-
-
-    /* cerimônia */
-
-    #cerimonia {
-        padding: 90px 0 100px;
-    }
-
-    .section-content {
-        padding: 0 22px;
-    }
-
-    .section-content h2 {
-        margin-bottom: 40px;
-    }
-
-    .event-item {
-        padding: 28px 10px;
-    }
-
-    .event-item strong {
-        font-size: 15px;
-    }
-
-
-    /* orientações */
-
-    #orientacoes {
-        padding: 100px 0;
-    }
-
-    #orientacoes .section-content h2 {
-        margin-bottom: 45px;
-    }
-
-    .guest-info {
-        grid-template-columns: 1fr;
-    }
-
-    .guest-info-item {
-        min-height: auto;
-
-        padding: 35px 20px;
-
-        border-right: none !important;
-        border-bottom: 1px solid rgba(169, 139, 79, .25);
-    }
-
-    .guest-info-item:last-child {
-        border-bottom: none;
-    }
-
+  #info-hero {
+    height: 52vh;
+    min-height: 400px;
+  }
+  .info-hero-content {
+    padding: 0 20px;
+  }
+  .info-hero-content > span {
+    font-size: 14px;
+  }
+  .info-wave {
+    height: 80px;
+  }
+  /* cerimônia */
+  #cerimonia {
+    padding: 90px 0 100px;
+  }
+  .section-content {
+    padding: 0 22px;
+  }
+  .section-content h2 {
+    margin-bottom: 40px;
+  }
+  .event-item {
+    padding: 28px 10px;
+  }
+  .event-item strong {
+    font-size: 15px;
+  }
+  /* orientações */
+  #orientacoes {
+    padding: 100px 0;
+  }
+  #orientacoes .section-content h2 {
+    margin-bottom: 45px;
+  }
+  .guest-info {
+    grid-template-columns: 1fr;
+  }
+  .guest-info-item {
+    min-height: auto;
+    padding: 35px 20px;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(169, 139, 79, 0.25);
+  }
+  .guest-info-item:last-child {
+    border-bottom: none;
+  }
 }
 
-
-/* =====================================
-   TELAS PEQUENAS
-===================================== */
-
+/* telas pequenas */
 @media (max-width: 480px) {
-
-    .info-hero-content h1 {
-        font-size: 65px;
-    }
-
-    .section-content h2 {
-        font-size: 48px;
-    }
-
-    .map-button {
-        width: 100%;
-        max-width: 280px;
-    }
-
+  .info-hero-content h1 {
+    font-size: 65px;
+  }
+  .section-content h2 {
+    font-size: 48px;
+  }
+  .map-button {
+    width: 100%;
+    max-width: 280px;
+  }
 }

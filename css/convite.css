@@ -1,288 +1,181 @@
-/* =====================================
-   CONVITE
-===================================== */
-
+/* convite */
 #convite {
-    position: relative;
-
-    width: 100%;
-    min-height: 85vh;
-
-    padding: 130px 30px 120px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--primary-light);
-
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  padding: 130px 30px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-light);
+  overflow: hidden;
 }
 
-
-/* =====================================
-   CONTEÚDO CENTRAL
-===================================== */
-
+/* conteúdo central */
 .convite-content {
-    position: relative;
-
-    width: 100%;
-    max-width: 680px;
-
-    z-index: 2;
-
-    text-align: center;
-
-    color: var(--primary);
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  z-index: 2;
+  text-align: center;
+  color: var(--primary);
 }
 
-
-/* =====================================
-   ORNAMENTO SUPERIOR
-===================================== */
-
+/* ornamento superior */
 .convite-ornamento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 15px;
-
-    margin-bottom: 28px;
-
-    color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 28px;
+  color: var(--gold);
 }
 
 .convite-ornamento span {
-    width: 45px;
-    height: 1px;
-
-    background-color: var(--gold);
-
-    opacity: .7;
+  width: 45px;
+  height: 1px;
+  background-color: var(--gold);
+  opacity: 0.7;
 }
 
 .convite-ornamento i {
-    font-size: 12px;
-
-    opacity: .8;
+  font-size: 12px;
+  opacity: 0.8;
 }
 
-
-/* =====================================
-   TÍTULO
-===================================== */
-
+/* título */
 .convite-subtitle {
-    margin-bottom: 40px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(42px, 5vw, 58px);
-    font-weight: 400;
-
-    line-height: 1.1;
-
-    color: var(--primary);
+  margin-bottom: 40px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(42px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
 }
 
-
-/* =====================================
-   TEXTO DO CONVITE
-===================================== */
-
+/* texto do convite */
 .convite-texto {
-    max-width: 600px;
-
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .convite-texto p {
-    margin-bottom: 24px;
-
-    font-family: "Lora", serif;
-
-    font-size: 16px;
-    font-weight: 400;
-
-    line-height: 1.9;
-
-    color: var(--primary);
-
-    opacity: .82;
+  margin-bottom: 24px;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--primary);
+  opacity: 0.82;
 }
 
-
-/* =====================================
-   VERSÍCULO
-===================================== */
-
+/* versículo */
 .versiculo {
-    position: relative;
-
-    max-width: 570px;
-
-    margin: 55px auto 0;
-
-    padding-top: 35px;
+  position: relative;
+  max-width: 570px;
+  margin: 55px auto 0;
+  padding-top: 35px;
 }
 
 .versiculo-detalhe {
-    position: absolute;
-
-    top: 0;
-    left: 50%;
-
-    width: 70px;
-    height: 1px;
-
-    transform: translateX(-50%);
-
-    background-color: var(--gold);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: var(--gold);
 }
 
 .versiculo blockquote {
-    margin: 0;
-
-    font-family: "Lora", serif;
-
-    font-size: 19px;
-    font-style: italic;
-    font-weight: 400;
-
-    line-height: 1.8;
-
-    color: var(--primary);
+  margin: 0;
+  font-family: "Lora", serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--primary);
 }
 
 .versiculo cite {
-    display: block;
-
-    margin-top: 18px;
-
-    font-family: "Lora", serif;
-
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    color: var(--gold);
+  display: block;
+  margin-top: 18px;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
 }
 
-
-/* =====================================
-   ASSINATURA
-===================================== */
-
+/* assinatura */
 .assinatura {
-    margin-top: 50px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: 43px;
-
-    color: var(--gold);
+  margin-top: 50px;
+  font-family: "Alex Brush", cursive;
+  font-size: 43px;
+  color: var(--gold);
 }
 
-
-/* =====================================
-   LÍRIOS / ELEMENTOS DECORATIVOS
-===================================== */
-
+/* lírios / elementos decorativos */
 .convite-decor {
-    position: absolute;
-
-    z-index: 1;
-
-    pointer-events: none;
-
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .convite-decor img {
-    display: block;
-
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
 
 /* imagem esquerda */
-
 .convite-decor-left {
-    width: clamp(280px, 28vw, 500px);
-    left: -80px;
-
+  width: clamp(280px, 28vw, 500px);
+  left: -80px;
 }
-
 
 /* imagem direita */
-
 .convite-decor-right {
-    width: clamp(220px, 22vw, 400px);
-    right: -8px;
-    top: 5%;
-
+  width: clamp(220px, 22vw, 400px);
+  right: -8px;
+  top: 5%;
 }
 
-
-/* =====================================
-   RESPONSIVO
-===================================== */
-
+/* responsivo */
 @media (max-width: 768px) {
-
-    #convite {
-        min-height: auto;
-
-        padding: 100px 25px 100px;
-    }
-
-    .convite-subtitle {
-        margin-bottom: 30px;
-    }
-
-    .convite-texto p {
-        font-size: 15px;
-
-        line-height: 1.85;
-    }
-
-    .versiculo {
-        margin-top: 45px;
-    }
-
-    .versiculo blockquote {
-        font-size: 17px;
-    }
-
-    .assinatura {
-        margin-top: 40px;
-
-        font-size: 38px;
-    }
-
-
-    .convite-decor-left {
-        width: 280px;
-
-        left: -100px;
-        bottom: 30px;
-
-        opacity: .3;
-    }
-
-    .convite-decor-right {
-        width: 230px;
-
-        right: -100px;
-        top: 10%;
-
-        opacity: .3;
-    }
-
+  #convite {
+    min-height: auto;
+    padding: 100px 25px 100px;
+  }
+  .convite-subtitle {
+    margin-bottom: 30px;
+  }
+  .convite-texto p {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+  .versiculo {
+    margin-top: 45px;
+  }
+  .versiculo blockquote {
+    font-size: 17px;
+  }
+  .assinatura {
+    margin-top: 40px;
+    font-size: 38px;
+  }
+  .convite-decor-left {
+    width: 280px;
+    left: -100px;
+    bottom: 30px;
+    opacity: 0.3;
+  }
+  .convite-decor-right {
+    width: 230px;
+    right: -100px;
+    top: 10%;
+    opacity: 0.3;
+  }
 }
