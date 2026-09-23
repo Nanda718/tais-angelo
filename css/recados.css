@@ -1,1108 +1,697 @@
-/* =====================================
-   HERO - RECADOS
-===================================== */
-
+/* hero - recados */
 #recados-hero {
-    position: relative;
-
-    width: 100%;
-    height: 55vh;
-    min-height: 450px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    background-color: var(--primary);
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--primary);
 }
-
 
 /* imagem de fundo */
-
 .recados-background {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
-
 
 /* camada verde */
-
 .recados-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            rgba(1, 14, 4, .55),
-            rgba(1, 14, 4, .7)
-        );
-
-    z-index: 2;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(1, 14, 4, 0.55), rgba(1, 14, 4, 0.7));
+  z-index: 2;
 }
 
-
 /* conteúdo */
-
 .recados-hero-content {
-    position: relative;
-
-    z-index: 4;
-
-    width: 100%;
-    max-width: 760px;
-
-    padding: 0 25px;
-
-    text-align: center;
-
-    color: var(--text-on-primary);
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  max-width: 760px;
+  padding: 0 25px;
+  text-align: center;
+  color: var(--text-on-primary);
 }
 
 .recados-hero-content > p {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 11px;
-    font-weight: 500;
-
-    text-transform: uppercase;
-
-    letter-spacing: 5px;
-
-    color: var(--gold);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--gold);
 }
 
 .recados-hero-content h1 {
-    margin-bottom: 12px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(65px, 8vw, 105px);
-    font-weight: 400;
-
-    line-height: 1;
-
-    color: var(--text-on-primary);
+  margin-bottom: 12px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(65px, 8vw, 105px);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-on-primary);
 }
 
 .recados-hero-content > span {
-    display: block;
-
-    max-width: 520px;
-
-    margin: 0 auto;
-
-    font-family: "Lora", serif;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    color: rgba(231, 230, 217, .8);
+  display: block;
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(231, 230, 217, 0.8);
 }
 
-
-/* =====================================
-   ONDA DO HERO
-===================================== */
-
+/* onda do hero */
 .recados-wave {
-    position: absolute;
-
-    left: 50%;
-    bottom: -1px;
-
-    width: 102vw;
-    height: 140px;
-
-    transform: translateX(-50%);
-
-    z-index: 5;
-
-    line-height: 0;
-
-    overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 102vw;
+  height: 140px;
+  transform: translateX(-50%);
+  z-index: 5;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .recados-wave svg {
-    display: block;
-
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .recados-wave path {
-    fill: var(--primary-light);
+  fill: var(--primary-light);
 }
 
-
-/* =====================================
-   ÁREA DE RECADO
-===================================== */
-
+/* área de recado */
 #mensagem {
-    position: relative;
-
-    width: 100%;
-
-    padding: 120px 30px 150px;
-
-    background-color: var(--primary-light);
+  position: relative;
+  width: 100%;
+  padding: 120px 30px 150px;
+  background-color: var(--primary-light);
 }
 
 .recados-content {
-    width: 100%;
-    max-width: 700px;
-
-    margin: 0 auto;
-
-    text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-
-/* =====================================
-   TÍTULOS
-===================================== */
-
+/* títulos */
 .section-pretitle {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 4px;
-
-    color: var(--gold);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--gold);
 }
 
 .recados-content h2 {
-    margin-bottom: 20px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(50px, 6vw, 72px);
-    font-weight: 400;
-
-    line-height: 1.1;
-
-    color: var(--primary);
+  margin-bottom: 20px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(50px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
 }
 
 .section-description {
-    max-width: 550px;
-
-    margin: 0 auto 55px;
-
-    font-family: "Lora", serif;
-
-    font-size: 15px;
-
-    line-height: 1.8;
-
-    color: rgba(1, 14, 4, .68);
+  max-width: 550px;
+  margin: 0 auto 55px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(1, 14, 4, 0.68);
 }
 
-
-/* =====================================
-   FORMULÁRIO
-===================================== */
-
+/* formulário */
 #recado-form {
-    width: 100%;
-
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 
 .form-group {
-    position: relative;
-
-    width: 100%;
-
-    margin-bottom: 32px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 .form-group label {
-    display: block;
-
-    margin-bottom: 10px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
 }
-
 
 /* campos */
-
 .form-group input,
 .form-group textarea {
-    width: 100%;
-
-    padding: 16px 18px;
-
-    border: 1px solid rgba(169, 139, 79, .35);
-    border-radius: 0;
-
-    outline: none;
-
-    background-color: rgba(255, 255, 255, .22);
-
-    font-family: "Lora", serif;
-
-    font-size: 14px;
-
-    color: var(--primary);
-
-    transition: .3s ease;
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(169, 139, 79, 0.35);
+  border-radius: 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.22);
+  font-family: "Lora", serif;
+  font-size: 14px;
+  color: var(--primary);
+  transition: 0.3s ease;
 }
 
 .form-group textarea {
-    min-height: 170px;
-
-    resize: vertical;
-
-    line-height: 1.7;
+  min-height: 170px;
+  resize: vertical;
+  line-height: 1.7;
 }
-
 
 /* placeholder */
-
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(1, 14, 4, .38);
+  color: rgba(1, 14, 4, 0.38);
 }
-
 
 /* foco */
-
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--gold);
-
-    background-color: rgba(255, 255, 255, .38);
-
-    box-shadow: 0 0 0 3px rgba(169, 139, 79, .08);
+  border-color: var(--gold);
+  background-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 0 0 3px rgba(169, 139, 79, 0.08);
 }
 
-
-/* =====================================
-   CONTADOR DE CARACTERES
-===================================== */
-
+/* contador de caracteres */
 .character-counter {
-    display: block;
-
-    margin-top: 8px;
-
-    text-align: right;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-
-    letter-spacing: 1px;
-
-    color: rgba(1, 14, 4, .45);
+  display: block;
+  margin-top: 8px;
+  text-align: right;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(1, 14, 4, 0.45);
 }
 
-
-/* =====================================
-   BOTÃO DO RECADO
-===================================== */
-
+/* botão do recado */
 .recado-button {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-
-    margin: 10px auto 0;
-
-    padding: 15px 30px;
-
-    border: 1px solid var(--gold);
-
-    background: transparent;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    color: var(--primary);
-
-    cursor: pointer;
-
-    transition: .35s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px auto 0;
+  padding: 15px 30px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.35s ease;
 }
 
 .recado-button i {
-    font-size: 12px;
-
-    transition: transform .35s ease;
+  font-size: 12px;
+  transition: transform 0.35s ease;
 }
 
 .recado-button:hover {
-    background-color: var(--gold);
-
-    color: var(--primary-light);
+  background-color: var(--gold);
+  color: var(--primary-light);
 }
 
 .recado-button:hover i {
-    transform: scale(1.12);
+  transform: scale(1.12);
 }
 
-
-/* =====================================
-   CONTRIBUIÇÃO PIX
-===================================== */
-
+/* contribuição pix */
 #contribuicao {
-    position: relative;
-
-    width: 100%;
-
-    min-height: 750px;
-
-    padding: 190px 30px 130px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--primary);
-
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 750px;
+  padding: 190px 30px 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  overflow: hidden;
 }
 
-
-/* =====================================
-   ONDA SUPERIOR PIX
-===================================== */
-
+/* onda superior pix */
 .pix-wave {
-    position: absolute;
-
-    top: -1px;
-    left: 50%;
-
-    width: 102vw;
-    height: 150px;
-
-    transform: translateX(-50%);
-
-    z-index: 2;
-
-    line-height: 0;
-
-    overflow: hidden;
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  width: 102vw;
+  height: 150px;
+  transform: translateX(-50%);
+  z-index: 2;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .pix-wave svg {
-    display: block;
-
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .pix-wave path {
-    fill: var(--primary-light);
+  fill: var(--primary-light);
 }
 
-
-/* =====================================
-   CONTEÚDO PIX
-===================================== */
-
+/* conteúdo pix */
 .pix-content {
-    position: relative;
-
-    z-index: 3;
-
-    width: 100%;
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    text-align: center;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .pix-pretitle {
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 4px;
-
-    color: var(--gold);
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--gold);
 }
 
 .pix-content h2 {
-    margin-bottom: 20px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(50px, 6vw, 75px);
-    font-weight: 400;
-
-    color: var(--text-on-primary);
+  margin-bottom: 20px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(50px, 6vw, 75px);
+  font-weight: 400;
+  color: var(--text-on-primary);
 }
 
 .pix-description {
-    max-width: 600px;
-
-    margin: 0 auto 55px;
-
-    font-family: "Lora", serif;
-
-    font-size: 15px;
-
-    line-height: 1.85;
-
-    color: rgba(231, 230, 217, .72);
+  max-width: 600px;
+  margin: 0 auto 55px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(231, 230, 217, 0.72);
 }
 
-
-/* =====================================
-   CAIXA PIX
-===================================== */
-
+/* caixa pix */
 .pix-box {
-    width: 100%;
-    max-width: 720px;
-
-    margin: 0 auto;
-
-    padding: 45px;
-
-    display: grid;
-
-    grid-template-columns: 230px 1fr;
-
-    align-items: center;
-
-    gap: 50px;
-
-    border: 1px solid rgba(169, 139, 79, .38);
-
-    background-color: rgba(255, 255, 255, .025);
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 45px;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  align-items: center;
+  gap: 50px;
+  border: 1px solid rgba(169, 139, 79, 0.38);
+  background-color: rgba(255, 255, 255, 0.025);
 }
 
-
-/* =====================================
-   QR CODE
-===================================== */
-
+/* qr code */
 .qr-code {
-    width: 230px;
-    height: 230px;
-
-    padding: 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--text-on-primary);
+  width: 230px;
+  height: 230px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-on-primary);
 }
 
 .qr-code img {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-
-/* =====================================
-   INFORMAÇÕES DO PIX
-===================================== */
-
+/* informações do pix */
 .pix-information {
-    text-align: left;
+  text-align: left;
 }
 
 .pix-label {
-    display: block;
-
-    margin-bottom: 12px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
 }
 
-
 /* chave */
-
 .pix-key-box {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    border-bottom: 1px solid rgba(169, 139, 79, .45);
-
-    padding-bottom: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(169, 139, 79, 0.45);
+  padding-bottom: 12px;
 }
 
 #pix-key {
-    flex: 1;
-
-    padding-right: 15px;
-
-    overflow-wrap: anywhere;
-
-    font-family: "Lora", serif;
-
-    font-size: 14px;
-
-    line-height: 1.6;
-
-    color: var(--text-on-primary);
+  flex: 1;
+  padding-right: 15px;
+  overflow-wrap: anywhere;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-on-primary);
 }
 
-
 /* botão copiar */
-
 #copy-pix {
-    width: 38px;
-    height: 38px;
-
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid rgba(169, 139, 79, .45);
-
-    background: transparent;
-
-    color: var(--gold);
-
-    cursor: pointer;
-
-    transition: .3s ease;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(169, 139, 79, 0.45);
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 #copy-pix:hover {
-    background-color: var(--gold);
-
-    color: var(--primary);
+  background-color: var(--gold);
+  color: var(--primary);
 }
-
 
 /* titular */
-
 .pix-owner {
-    margin-top: 16px;
-
-    font-family: "Lora", serif;
-
-    font-size: 12px;
-
-    line-height: 1.7;
-
-    color: rgba(231, 230, 217, .58);
+  margin-top: 16px;
+  font-family: "Lora", serif;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(231, 230, 217, 0.58);
 }
 
-
-/* =====================================
-   MENSAGEM CHAVE COPIADA
-===================================== */
-
+/* mensagem chave copiada */
 .copy-message {
-    display: block;
-
-    height: 18px;
-
-    margin-top: 14px;
-
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    color: var(--gold);
-
-    opacity: 0;
-
-    transform: translateY(5px);
-
-    transition: .3s ease;
+  display: block;
+  height: 18px;
+  margin-top: 14px;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  opacity: 0;
+  transform: translateY(5px);
+  transition: 0.3s ease;
 }
 
 .copy-message.active {
-    opacity: 1;
-
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-
-/* =====================================
-   RESPONSIVO - TABLET
-===================================== */
-
+/* responsivo - tablet */
 @media (max-width: 900px) {
-
-    #recados-hero {
-        height: 50vh;
-        min-height: 420px;
-    }
-
-    .recados-wave {
-        height: 100px;
-    }
-
-
-    #mensagem {
-        padding: 100px 30px 130px;
-    }
-
-
-    #contribuicao {
-        padding-top: 160px;
-    }
-
-    .pix-wave {
-        height: 110px;
-    }
-
-    .pix-box {
-        max-width: 600px;
-
-        grid-template-columns: 190px 1fr;
-
-        gap: 35px;
-
-        padding: 35px;
-    }
-
-    .qr-code {
-        width: 190px;
-        height: 190px;
-    }
-
+  #recados-hero {
+    height: 50vh;
+    min-height: 420px;
+  }
+  .recados-wave {
+    height: 100px;
+  }
+  #mensagem {
+    padding: 100px 30px 130px;
+  }
+  #contribuicao {
+    padding-top: 160px;
+  }
+  .pix-wave {
+    height: 110px;
+  }
+  .pix-box {
+    max-width: 600px;
+    grid-template-columns: 190px 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+  .qr-code {
+    width: 190px;
+    height: 190px;
+  }
 }
 
-
-
-
-/* =====================================
-   MURAL DE RECADOS
-===================================== */
-
+/* mural de recados */
 #mural {
-    position: relative;
-
-    width: 100%;
-
-    padding: 100px 30px 160px;
-
-    background-color: var(--primary-light);
+  position: relative;
+  width: 100%;
+  padding: 100px 30px 160px;
+  background-color: var(--primary-light);
 }
 
 .mural-content {
-    width: 100%;
-    max-width: 1150px;
-
-    margin: 0 auto;
-
-    text-align: center;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .mural-content h2 {
-    margin-bottom: 20px;
-
-    font-family: "Alex Brush", cursive;
-
-    font-size: clamp(50px, 6vw, 72px);
-    font-weight: 400;
-
-    color: var(--primary);
+  margin-bottom: 20px;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(50px, 6vw, 72px);
+  font-weight: 400;
+  color: var(--primary);
 }
 
-
-/* =====================================
-   GRID DO MURAL
-===================================== */
-
+/* grid do mural */
 .mural-list {
-    width: 100%;
-
-    margin-top: 65px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
+  width: 100%;
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-
-/* =====================================
-   RECADO
-===================================== */
-
+/* recado */
 .recado-card {
-    position: relative;
-
-    min-height: 280px;
-
-    padding: 45px 35px 35px;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
-    align-items: center;
-
-    border: 1px solid
-        rgba(169, 139, 79, .28);
-
-    background:
-        rgba(255, 255, 255, .20);
-
-    transition:
-        transform .35s ease,
-        border-color .35s ease,
-        background-color .35s ease;
+  position: relative;
+  min-height: 280px;
+  padding: 45px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(169, 139, 79, 0.28);
+  background: rgba(255, 255, 255, 0.2);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background-color 0.35s ease;
 }
 
 .recado-card:hover {
-    transform: translateY(-5px);
-
-    border-color:
-        rgba(169, 139, 79, .55);
-
-    background:
-        rgba(255, 255, 255, .34);
+  transform: translateY(-5px);
+  border-color: rgba(169, 139, 79, 0.55);
+  background: rgba(255, 255, 255, 0.34);
 }
 
-
 /* ícone */
-
 .recado-icon {
-    margin-bottom: 25px;
-
-    color: var(--gold);
-
-    opacity: .7;
+  margin-bottom: 25px;
+  color: var(--gold);
+  opacity: 0.7;
 }
 
 .recado-icon i {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 /* mensagem */
-
 .recado-message {
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-
-    font-family: "Lora", serif;
-
-    font-size: 15px;
-    font-style: italic;
-
-    line-height: 1.9;
-
-    color: rgba(1, 14, 4, .78);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.9;
+  color: rgba(1, 14, 4, 0.78);
 }
 
-
 /* autor */
-
 .recado-author {
-    width: 100%;
-
-    margin-top: 30px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 13px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
 }
 
 .recado-line {
-    width: 35px;
-    height: 1px;
-
-    background-color: var(--gold);
-
-    opacity: .6;
+  width: 35px;
+  height: 1px;
+  background-color: var(--gold);
+  opacity: 0.6;
 }
 
 .recado-author strong {
-    font-family: "Lora", serif;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    color: var(--gold);
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
 }
 
-
-/* =====================================
-   MURAL VAZIO
-===================================== */
-
+/* mural vazio */
 .mural-empty {
-    grid-column: 1 / -1;
-
-    padding: 70px 20px;
-
-    text-align: center;
-
-    color: rgba(1, 14, 4, .45);
+  grid-column: 1 / -1;
+  padding: 70px 20px;
+  text-align: center;
+  color: rgba(1, 14, 4, 0.45);
 }
 
 .mural-empty i {
-    margin-bottom: 20px;
-
-    font-size: 25px;
-
-    color: var(--gold);
-
-    opacity: .5;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: var(--gold);
+  opacity: 0.5;
 }
 
 .mural-empty p {
-    max-width: 400px;
-
-    margin: 0 auto;
-
-    font-family: "Lora", serif;
-
-    font-size: 14px;
-
-    line-height: 1.8;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
-
-/* =====================================
-   RESPONSIVO
-===================================== */
-
+/* responsivo */
 @media (max-width: 900px) {
-
-    .mural-list {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
+  .mural-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 
 @media (max-width: 600px) {
-
-    #mural {
-        padding:
-            80px 22px
-            120px;
-    }
-
-    .mural-list {
-        margin-top: 45px;
-
-        grid-template-columns: 1fr;
-    }
-
-    .recado-card {
-        min-height: 240px;
-
-        padding: 35px 25px;
-    }
-
+  #mural {
+    padding: 80px 22px 120px;
+  }
+  .mural-list {
+    margin-top: 45px;
+    grid-template-columns: 1fr;
+  }
+  .recado-card {
+    min-height: 240px;
+    padding: 35px 25px;
+  }
 }
 
-/* =====================================
-   RESPONSIVO - MOBILE
-===================================== */
-
+/* responsivo - mobile */
 @media (max-width: 768px) {
-
-    #recados-hero {
-        height: 52vh;
-        min-height: 400px;
-    }
-
-    .recados-hero-content {
-        padding: 0 20px;
-    }
-
-    .recados-hero-content > span {
-        font-size: 14px;
-    }
-
-    .recados-wave {
-        height: 80px;
-    }
-
-
-    /* recado */
-
-    #mensagem {
-        padding: 90px 22px 120px;
-    }
-
-    .section-description {
-        margin-bottom: 40px;
-
-        font-size: 14px;
-    }
-
-    .form-group {
-        margin-bottom: 25px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        padding: 15px;
-
-        font-size: 13px;
-    }
-
-
-    /* Pix */
-
-    #contribuicao {
-        min-height: auto;
-
-        padding: 145px 22px 100px;
-    }
-
-    .pix-wave {
-        height: 90px;
-    }
-
-    .pix-description {
-        margin-bottom: 40px;
-
-        font-size: 14px;
-    }
-
-    .pix-box {
-        max-width: 430px;
-
-        padding: 30px 22px;
-
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .qr-code {
-        width: 200px;
-        height: 200px;
-
-        margin: 0 auto;
-    }
-
-    .pix-information {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .pix-label {
-        text-align: center;
-    }
-
-    .pix-key-box {
-        text-align: left;
-    }
-
+  #recados-hero {
+    height: 52vh;
+    min-height: 400px;
+  }
+  .recados-hero-content {
+    padding: 0 20px;
+  }
+  .recados-hero-content > span {
+    font-size: 14px;
+  }
+  .recados-wave {
+    height: 80px;
+  }
+  /* recado */
+  #mensagem {
+    padding: 90px 22px 120px;
+  }
+  .section-description {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 15px;
+    font-size: 13px;
+  }
+  /* Pix */
+  #contribuicao {
+    min-height: auto;
+    padding: 145px 22px 100px;
+  }
+  .pix-wave {
+    height: 90px;
+  }
+  .pix-description {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .pix-box {
+    max-width: 430px;
+    padding: 30px 22px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .pix-information {
+    width: 100%;
+    text-align: center;
+  }
+  .pix-label {
+    text-align: center;
+  }
+  .pix-key-box {
+    text-align: left;
+  }
 }
 
-
-/* =====================================
-   TELAS PEQUENAS
-===================================== */
-
+/* telas pequenas */
 @media (max-width: 480px) {
-
-    .recados-hero-content h1 {
-        font-size: 65px;
-    }
-
-    .recados-content h2,
-    .pix-content h2 {
-        font-size: 50px;
-    }
-
-    .recado-button {
-        width: 100%;
-    }
-
-    .pix-box {
-        padding: 28px 18px;
-    }
-
-    .qr-code {
-        width: 180px;
-        height: 180px;
-    }
-
-    #pix-key {
-        font-size: 12px;
-    }
-
+  .recados-hero-content h1 {
+    font-size: 65px;
+  }
+  .recados-content h2,
+  .pix-content h2 {
+    font-size: 50px;
+  }
+  .recado-button {
+    width: 100%;
+  }
+  .pix-box {
+    padding: 28px 18px;
+  }
+  .qr-code {
+    width: 180px;
+    height: 180px;
+  }
+  #pix-key {
+    font-size: 12px;
+  }
 }

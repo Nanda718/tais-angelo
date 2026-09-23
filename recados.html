@@ -1,116 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recados | Taís & Ângelo</title>
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/recados.css">
-</head>
-
-<body>
-
-<header>
-
-    <nav id="navbar">
-
-        <ul class="nav-list">
-
-            <li class="logo_item">
-                <a href="index.html">
-                    <img
-                        src="assets/img/logo-sf.png"
-                        class="logo"
-                        alt="Taís e Ângelo">
-                </a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/recados.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="nav-list">
+          <div class="logo-item">
+            <a href="index.html">
+              <img
+                src="assets/img/logo-sf.png"
+                class="logo"
+                alt="Taís e Ângelo"
+              />
+            </a>
+          </div>
+          <ul class="links">
+            <li class="nav-item">
+              <a href="index.html">Início</a>
             </li>
-
-            <div class="links">
-
-                <li class="nav_item">
-                    <a href="index.html">Início</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="informacoes.html">Informações</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="recados.html">Recados</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="index.html#noivos">Os Noivos</a>
-                </li>
-
-            </div>
-
-        </ul>
-
+            <li class="nav-item">
+              <a href="informacoes.html">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a href="recados.html">Recados</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#noivos">Os Noivos</a>
+            </li>
+          </ul>
+        </div>
         <div class="mobile-btn">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
-
         <div class="mobile-menu">
-
-            <a href="index.html">Início</a>
-            <a href="informacoes.html">Informações</a>
-            <a href="recados.html">Recados</a>
-            <a href="index.html#noivos">Os Noivos</a>
-
+          <a href="index.html">Início</a>
+          <a href="informacoes.html">Informações</a>
+          <a href="recados.html">Recados</a>
+          <a href="index.html#noivos">Os Noivos</a>
         </div>
-
-    </nav>
-
-</header>
-
-
-<main>
-
-    <!-- =================================
-         HERO
-    ================================== -->
-
-    <section id="recados-hero">
-
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section id="recados-hero">
         <img
-            src="assets/img/recados-fundo.png"
-            class="recados-background"
-            alt="">
-
+          src="assets/img/recados-fundo.png"
+          class="recados-background"
+          alt=""
+        />
         <div class="recados-overlay"></div>
-
         <div class="recados-hero-content">
-
-            <p>Taís & Ângelo</p>
-
-            <h1>Recados</h1>
-
-            <span>
-                Deixe algumas palavras para fazer parte
-                deste momento tão especial.
-            </span>
-
+          <p>Taís & Ângelo</p>
+          <h1>Recados</h1>
+          <span>
+            Deixe algumas palavras para fazer parte deste momento tão especial.
+          </span>
         </div>
-
-
         <div class="recados-wave">
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 220"
-                preserveAspectRatio="none">
-
-                <path
-                    d="
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 220"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="
                         M0,80
                         C160,105 250,170 420,185
                         C610,202 760,130 890,95
@@ -119,140 +84,76 @@
                         L1440,220
                         L0,220
                         Z
-                    ">
-                </path>
-
-            </svg>
-
+                    "
+            ></path>
+          </svg>
         </div>
-
-    </section>
-
-
-    <!-- =================================
-         FORMULÁRIO DE RECADO
-    ================================== -->
-
-    <section id="mensagem">
-
+      </section>
+      <!-- formulário de recado -->
+      <section id="mensagem">
         <div class="recados-content">
-
-            <p class="section-pretitle">
-                Com carinho
-            </p>
-
-            <h2>
-                Deixe seu recado
-            </h2>
-
-            <p class="section-description">
-                Escreva uma mensagem para Taís e Ângelo.
-                Seu carinho fará parte das lembranças deste dia.
-            </p>
-
-
-            <form id="recado-form">
-
-                <div class="form-group">
-
-                    <label for="nome">
-                        Seu nome
-                    </label>
-
-                    <input
-                        type="text"
-                        id="nome"
-                        name="nome"
-                        placeholder="Escreva aqui seu nome"
-                        required>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="mensagem-recado">
-                        Seu recado
-                    </label>
-
-                    <textarea
-                        id="mensagem-recado"
-                        name="mensagem"
-                        rows="7"
-                        maxlength="600"
-                        placeholder="Escreva aqui sua mensagem para os noivos..."
-                        required></textarea>
-
-                    <span class="character-counter">
-                        <span id="character-count">0</span>/600
-                    </span>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="recado-button">
-
-                    Enviar recado
-
-                    <i class="fa-regular fa-heart"></i>
-
-                </button>
-
-            </form>
-
+          <p class="section-pretitle">Com carinho</p>
+          <h2>Deixe seu recado</h2>
+          <p class="section-description">
+            Escreva uma mensagem para Taís e Ângelo. Seu carinho fará parte das
+            lembranças deste dia.
+          </p>
+          <form id="recado-form">
+            <div class="form-group">
+              <label for="nome"> Seu nome </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Escreva aqui seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="mensagem-recado"> Seu recado </label>
+              <textarea
+                id="mensagem-recado"
+                name="mensagem"
+                rows="7"
+                maxlength="600"
+                placeholder="Escreva aqui sua mensagem para os noivos..."
+                required
+              ></textarea>
+              <span class="character-counter">
+                <span id="character-count">0</span>/600
+              </span>
+            </div>
+            <button type="submit" class="recado-button">
+              Enviar recado
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </form>
         </div>
-
-    </section>
-
-
-    <section id="mural">
-
-    <div class="mural-content">
-
-        <p class="section-pretitle">
-            Palavras que ficam
-        </p>
-
-        <h2>
-            Mural de recados
-        </h2>
-
-        <p class="section-description">
-            Um cantinho especial para guardar o carinho
-            de quem faz parte desta história.
-        </p>
-
-
-        <div id="mural-list" class="mural-list">
-
+      </section>
+      <section id="mural">
+        <div class="mural-content">
+          <p class="section-pretitle">Palavras que ficam</p>
+          <h2>Mural de recados</h2>
+          <p class="section-description">
+            Um cantinho especial para guardar o carinho de quem faz parte desta
+            história.
+          </p>
+          <div id="mural-list" class="mural-list">
             <!-- os recados serão adicionados pelo JavaScript -->
-
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-
-    <!-- =================================
-         PIX
-    ================================== -->
-
-    <section id="contribuicao">
-
+      </section>
+      <!-- pix -->
+      <section id="contribuicao">
         <!-- curva superior -->
-
         <div class="pix-wave">
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 220"
-                preserveAspectRatio="none">
-
-                <path
-                    d="
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 220"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="
                         M0,80
                         C160,105 250,170 420,185
                         C610,202 760,130 890,95
@@ -261,126 +162,69 @@
                         L1440,0
                         L0,0
                         Z
-                    ">
-                </path>
-
-            </svg>
-
+                    "
+            ></path>
+          </svg>
         </div>
-
-
         <div class="pix-content">
-
-            <p class="pix-pretitle">
-                Um gesto de carinho
-            </p>
-
-            <h2>
-                Contribuição livre
-            </h2>
-
-            <p class="pix-description">
-                Sua presença é o nosso maior presente.
-                Mas, caso queira nos presentear de outra forma,
-                deixamos aqui uma opção de contribuição livre via Pix.
-            </p>
-
-
-            <div class="pix-box">
-
-                <div class="qr-code">
-
-                    <!--
+          <p class="pix-pretitle">Um gesto de carinho</p>
+          <h2>Contribuição livre</h2>
+          <p class="pix-description">
+            Sua presença é o nosso maior presente. Mas, caso queira nos
+            presentear de outra forma, deixamos aqui uma opção de contribuição
+            livre via Pix.
+          </p>
+          <div class="pix-box">
+            <div class="qr-code">
+              <!--
                         QR CODE PENDENTE
                         Substituir pela imagem oficial do Pix
                     -->
-
-                    <img
-                        src="assets/img/qrcode-pix.png"
-                        alt="QR Code Pix">
-
-                </div>
-
-
-                <div class="pix-information">
-
-                    <span class="pix-label">
-                        Chave Pix
-                    </span>
-
-                    <!-- CHAVE PENDENTE -->
-
-                    <div class="pix-key-box">
-
-                        <span id="pix-key">
-                            chave-pix-aqui
-                        </span>
-
-                        <button
-                            type="button"
-                            id="copy-pix"
-                            aria-label="Copiar chave Pix">
-
-                            <i class="fa-regular fa-copy"></i>
-
-                        </button>
-
-                    </div>
-
-
-                    <p class="pix-owner">
-                        <!-- NOME DO TITULAR PENDENTE -->
-                        Titular: Nome do titular
-                    </p>
-
-
-                    <span
-                        id="copy-message"
-                        class="copy-message">
-
-                        Chave copiada!
-
-                    </span>
-
-                </div>
-
+              <img src="assets/img/qrcode-pix.png" alt="QR Code Pix" />
             </div>
-
+            <div class="pix-information">
+              <span class="pix-label"> Chave Pix </span>
+              <!-- CHAVE PENDENTE -->
+              <div class="pix-key-box">
+                <span id="pix-key"> chave-pix-aqui </span>
+                <button
+                  type="button"
+                  id="copy-pix"
+                  aria-label="Copiar chave Pix"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+              <p class="pix-owner">
+                <!-- NOME DO TITULAR PENDENTE -->
+                Titular: Nome do titular
+              </p>
+              <span id="copy-message" class="copy-message">
+                Chave copiada!
+              </span>
+            </div>
+          </div>
         </div>
-
-    </section>
-
-</main>
-
-<footer id="footer">
-
-    <div class="footer-content">
-
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-content">
         <a href="index.html" class="footer-brand">
-            <img
-                src="assets/img/logo-sf.png"
-                alt="Taís e Ângelo"
-                class="footer-logo"
-            >
+          <img
+            src="assets/img/logo-sf.png"
+            alt="Taís e Ângelo"
+            class="footer-logo"
+          />
         </a>
-
         <div class="footer-center">
-            <span>Taís & Ângelo</span>
-            <span class="footer-divider">•</span>
-            <span>22.05.2027</span>
+          <span>Taís & Ângelo</span>
+          <span class="footer-divider">•</span>
+          <span>22.05.2027</span>
         </div>
-
-        <p class="footer-message">
-            Com amor, para um dia inesquecível.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="js/recados.js"></script>
-
-</body>
-
+        <p class="footer-message">Com amor, para um dia inesquecível.</p>
+      </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/recados.js"></script>
+  </body>
 </html>
